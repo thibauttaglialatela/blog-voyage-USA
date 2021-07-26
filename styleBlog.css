@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 body {
     font-family: 'Montserrat', Arial, sans-serif;
     font-size: 18px;
@@ -11,7 +10,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 200px;
+    height: 20vh;
     background-image: url(img/banniere_blog.jpg);
     background-size: cover;
     background-position: center;
@@ -19,7 +18,7 @@ body {
 
 .banniere h1 {
     font-family: Roboto, Arial, sans-serif;
-    font-size: 4rem;
+    font-size: 1rem;
     color: #fff;
 
 }
@@ -35,7 +34,7 @@ nav {
 nav .logo img {
     height: 60px;
     width: max-content;
-    margin-left: 80px;
+    margin-left: 0;
     margin-right: auto;
 }
 
@@ -45,12 +44,14 @@ nav ul {
     justify-content: space-between;
     align-items: center;
     margin-left: auto;
-    margin-right: 30px;
+    margin-right: 0;
 }
 
 nav ul a {
     text-decoration: none;
     color: #F2F287;
+    font-size: 14px;
+    padding: 0;
 }
 
 nav ul a:hover {
@@ -62,73 +63,6 @@ button {
     height: 40px;
     width: 130px;
     border-radius: 6px;
-    margin: 10px 50px 10px 30px;
+    margin: 10px 5px 10px 30px;
     color: #fff;
-=======
-body {
-    font-family: 'Montserrat', Arial, sans-serif;
-    font-size: 18px;
-    background-color: #D4D3DD;
-}
-
-
-.banniere {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 200px;
-    background-image: url(img/banniere_blog.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.banniere h1 {
-    font-family: Roboto, Arial, sans-serif;
-    font-size: 4rem;
-    color: #fff;
-
-}
-
-nav {
-    width: 100%;
-    height: 60px;
-    background-color: #E59A59;
-    display: flex;
-    justify-content: space-between;
-}
-
-nav .logo img {
-    height: 60px;
-    width: max-content;
-    margin-left: 80px;
-    margin-right: auto;
-}
-
-nav ul {
-    width: 300px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: auto;
-    margin-right: 30px;
-}
-
-nav ul a {
-    text-decoration: none;
-    color: #F2F287;
-}
-
-nav ul a:hover {
-    color: blue;
-}
-
-button {
-    background-color: #888870;
-    height: 40px;
-    width: 130px;
-    border-radius: 6px;
-    margin: 10px 50px 10px 30px;
-    color: #fff;
->>>>>>> 8dc44a016326f7be822dcbf39c39806a4b14d15e
 }
