@@ -18,7 +18,7 @@ body {
 
 .banniere h1 {
     font-family: Roboto, Arial, sans-serif;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #fff;
 
 }
@@ -29,6 +29,7 @@ nav {
     background-color: #E59A59;
     display: flex;
     justify-content: space-between;
+    /*position:fixed;*/
 }
 
 nav .logo img {
@@ -39,12 +40,11 @@ nav .logo img {
 }
 
 nav ul {
-    width: 300px;
-    display: flex;
-    justify-content: space-between;
+    width: 40vw;
+    display:flex;
+    flex-wrap: wrap;
     align-items: center;
-    margin-left: auto;
-    margin-right: 0;
+    justify-content: space-between;
 }
 
 nav ul a {
@@ -54,15 +54,43 @@ nav ul a {
     padding: 0;
 }
 
-nav ul a:hover {
-    color: blue;
+nav li:hover {
+    background-color: #D4D3DD;
+    /*height: 60px;*/
+    
+
 }
 
 button {
     background-color: #888870;
-    height: 40px;
-    width: 130px;
+    height: 5vh;
+    /*width: 40vw;*/
     border-radius: 6px;
-    margin: 10px 5px 10px 30px;
+    margin: auto 2vw;
     color: #fff;
+}
+
+.presentation-title {
+    font-family: Montserrat, serif;
+    font-size: 2rem;
+    text-align: center;
+    margin: 2vh auto 3vh auto;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+
+.photo-text p,
+.presentation p {
+    font-size: 0.8rem;
+}
+
+.photo-text img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
