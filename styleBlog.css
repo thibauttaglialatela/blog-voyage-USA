@@ -2,6 +2,15 @@ body {
     font-family: 'Montserrat', Arial, sans-serif;
     font-size: 18px;
     background-color: #D4D3DD;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    min-width: 320px;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 
@@ -18,7 +27,7 @@ body {
 
 .banniere h1 {
     font-family: Roboto, Arial, sans-serif;
-    font-size: 1.5rem;
+    font-size: 4em;
     color: #fff;
 
 }
@@ -30,6 +39,11 @@ nav {
     display: flex;
     justify-content: space-between;
     /*position:fixed;*/
+}
+
+.navbar {
+    margin-left: auto;
+    display: flex;
 }
 
 nav .logo img {
@@ -44,18 +58,19 @@ nav ul {
     display:flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 nav ul a {
     text-decoration: none;
     color: #F2F287;
     font-size: 14px;
-    padding: 0;
+    
 }
 
 nav li:hover {
     background-color: #D4D3DD;
+    margin: 21px 0;
     /*height: 60px;*/
     
 
@@ -68,6 +83,12 @@ button {
     border-radius: 6px;
     margin: auto 2vw;
     color: #fff;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .presentation-title {
@@ -83,6 +104,19 @@ h3 {
     text-align: center;
 }
 
+.photo-text {
+    width: 429px;
+    height: fit-content;
+    box-shadow: 15px 20px 5px 0px #444342;
+}
+
+.presentation {
+    width: 50vw;
+    height: fit-content;
+    margin: 15px auto;
+    box-shadow: 15px 20px 5px 0px #444342;
+}
+
 .photo-text p,
 .presentation p {
     font-size: 0.8rem;
@@ -92,5 +126,49 @@ h3 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 429px;
+    height: 322px;
+}
+
+.commentaires {
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr repeat(2, 2fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+}
+
+.commentaires h2 {
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 3em;
+    text-align: left;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 3; }
+.commentaires-texte-div2 { grid-area: 2 / 1 / 3 / 2; }
+.commentaires-texte-div3 { grid-area: 2 / 2 / 3 / 3; }
+.commentaires-texte-div4 { grid-area: 3 / 1 / 4 / 2; }
+.commentaires-texte-div5 { grid-area: 3 / 2 / 4 / 3; }
+
+footer {
+    height: 10vh;
+    background-color: #E59A59;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer img {
+    height:5vh;
+}
+
+footer ul  {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer ul li {
+    padding: 0 5px;
 }
