@@ -4,6 +4,12 @@ body {
     background-color: #D4D3DD;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1 0 auto;
+    /*position: relative;*/
 }
 
 .header {
@@ -139,10 +145,10 @@ h3 {
     grid-row-gap: 5px;
 }
 
-.commentaires h2 {
+h2 {
     font-family: Montserrat, Arial, sans-serif;
-    font-size: 3em;
-    text-align: left;
+    font-size: 2em;
+    text-align: center;
 }
 
 .div1 { grid-area: 1 / 1 / 2 / 3; }
@@ -153,6 +159,7 @@ h3 {
 
 footer {
     height: 10vh;
+    width: 100%;
     background-color: #E59A59;
     flex-shrink: 0;
     display: flex;
@@ -171,4 +178,24 @@ footer ul  {
 
 footer ul li {
     padding: 0 5px;
+}
+
+#galerie {
+    width: max-content;
+    /*border: 1px solid rgb(153, 81, 9);*/
+    font: 0.9em Montserrat, serif;
+    margin: 15px auto;
+    text-align: center;
+}
+
+#galerie_mini {
+    display: flex;
+    justify-content: center;
+
+}
+
+#photo img {
+    width: 50vw;
+    border: 1px dashed rgba(2, 131, 236, 0.658);
+    box-shadow: 15px 20px 5px 0px #444342;
 }
