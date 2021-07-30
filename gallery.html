@@ -13,7 +13,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-<script type ="text/javasript" src="script.js"></script>
 </head>
 <body>
     <header class="header">
@@ -38,29 +37,11 @@
     </header>
     <main>
         <h2>Quelques photos prises lors de mon séjour.</h2>
-        <div id="galerie">
-            <ul id="galerie_mini">
-                <li>
-                    <a href="img/img01.jpg" title="Joshua Tree"><img src="img/img-mini01.jpg" alt="Le titre de la photo 1"></a>
-                </li>
-                <li>
-                    <a href="img/img02.jpg" title="Monument valley"><img src="img/img-mini02.jpg" alt="Le titre de la photo 2"></a>
-                </li>
-                <li>
-                    <a href="img/img03.jpg" title="Bryce canyon"3><img src="img/img-mini03.jpg" alt="Le titre de la photo 3"></a>
-                </li>
-                <li>
-                    <a href="img/img04.jpg" title="Zion park"><img src="img/img-mini04.jpg" alt="Le titre de la photo 4"></a>
-                </li>
-                <li>
-                    <a href="img/img05.jpg" title="Hollywood"><img src="img/img-mini05.jpg" alt="Le titre de la photo 5"></a>
-                </li>
-            </ul>
-
-            <dl id="photo">
-                <dt>Titre de la photo 1</dt>
-                <dd><img id="big_pict" src="img/img01.jpg" alt="Photo 1 en taille normale"></dd>
-            </dl>
+        <div class="gallery">
+            <div id="galerie_mini"></div>
+            <div class="gallery-highlight">
+                <img src="img/img01.jpg" alt="" class="displayed-img">
+            </div>  
         </div>
         
     </main>
@@ -77,4 +58,5 @@
         </ul>
 
     </footer>
+    <script src="script.js"></script>
 </body>
