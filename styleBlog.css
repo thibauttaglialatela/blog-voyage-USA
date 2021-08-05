@@ -292,3 +292,53 @@ input[type="radio"].name + label {
 input[type="radio"].name:checked + label {
     background-color: #F2F287;
 }
+
+form {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="submit"] {
+    background-color: #ff7b08;
+    color: #D4D3DD;
+    transform: translateX(-60px);
+}
+
+@media screen and (max-width: 860px) {
+    .banniere h1 {
+        font-size: 3em;
+    }
+    .banniere {
+        background-image: none;
+        height:auto;
+    }
+    nav {
+        height: 13vh;
+    }
+
+    nav .logo img {
+        height:13vh;
+    }
+    nav ul {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .commentaires {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .commentaires h2 {
+        font-size: 1.7rem;
+    }
+
+    .commentaires h3 {
+        font-size: 1.3rem;
+    }
+
+    .commentaires p {
+        font-size: 0.8rem;
+    }
+
+}
