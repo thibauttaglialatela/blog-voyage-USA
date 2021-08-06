@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Voyage aux Etats-Unis</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styleBlog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="banniere">
+            <h1>Le grand Ouest américain</h1>
+        </div>
+        
+        <nav>
+            <div class="logo">
+                <img src="img/logo_CSE_SOGS.jpg" alt="logo CSE">
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Galerie photos</a></li>
+                    <li><a href="calendar.html">Les dates de mon voyage</a></li>
+                    <li><a href="contact.html">Des questions ? </a></li>
+                </ul>
+                <!--<button>Register</button>-->
+            </div>
+            
+        </nav>
+    </header>
+    <main>
+        <form action="traitement.php" method="post">
+            <fieldset>
+                <legend>Vos coordonnées</legend>
+                
+                <label for="name">Votre nom ? </label>
+                <input type="text" name="nom" id="name">
+
+                <label for="firstname">Votre prénom ? </label>
+                <input type="text" name="firstname" id="firstname">
+
+                <label for="email">Votre e-mail ? </label>
+                <input type="email" name="email" id="email">
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Votre tranche d'age : </legend>
+                <div class="radio-container">
+                    <div>
+                        <input type="radio" name="age" class="name" id="under-18" value="under-18">
+                        <label for="under-18">Moins de 18 ans</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="age" class="name" id="19-25" value="19-25">
+                        <label for="19-25">Entre 19 et 25 ans</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="age" class="name" id="26-60" value="26-60" checked>
+                        <label for="26-60">Entre 26 et 60 ans</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="age" class="name" id="60-more" value="60-more">
+                        <label for="60-more">60 et plus</label>
+                    </div>
+                </div>
+                             
+            </fieldset>
+
+            <fieldset>
+                <legend>De quel endroit venez vous ?</legend>
+                <label for="country"></label>
+                <select name="country" id="country">
+                    <optgroup label="Europe">
+                        <option value="France">France</option>
+                        <option value="Spain">Espagne</option>
+                        <option value="Italy">Italie</option>
+                        <option value="UK">Royaume-Uni</option>
+                    </optgroup>
+                    <optgroup label="America">
+                        <option value="Canada">Canada</option>
+                        <option value="United-States">Etats-Unis</option>
+                        <option value="Brazil">Brésil</option>
+                        <option value="Mexico">Mexique</option>
+                    </optgroup>
+                    <optgroup label="Asia"> 
+                        <option value="China">Chine</option>
+                        <option value="Japan">Japon</option>
+                        <option value="South-Korea">Corée du sud</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+            <input type="submit" value="Envoyer vos réponses">
+
+
+        </form>
+        
+    </main>
+
+    <footer>
+        <img src="img/logo_CSE_SOGS.jpg" alt="logo CSE">
+        <ul>
+            <li><a href="https://www.facebook.com/">Ma page facebook</a></li>
+            <li><a href="#">Mon instagram</a></li>
+            <li><a href="#">Mon site web</a></li>
+        </ul>
+
+    </footer>
+</body>
